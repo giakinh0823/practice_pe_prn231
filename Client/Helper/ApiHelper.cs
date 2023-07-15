@@ -44,6 +44,35 @@ namespace Client.Helper
             return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
+        // multiform-data
+        public async Task<TResponse?> PostMultiFormAsync<TResponse>(string url, object data)
+        {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using var content = new MultipartFormDataContent();
+
+            foreach (var property in data.GetType().GetProperties())
+            {
+                var propertyName = property.Name;
+                var propertyValue = property.GetValue(data)?.ToString();
+
+                if (!string.IsNullOrEmpty(propertyName) && !string.IsNullOrEmpty(propertyValue))
+                {
+                    content.Add(new StringContent(propertyValue), propertyName);
+                }
+            }
+
+            var response = await _httpClient.PostAsync(url, content);
+            response.EnsureSuccessStatusCode();
+
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
+        }
+
+
         public async Task<TResponse?> PutAsync<TResponse>(string url, Object data)
         {
             var options = new JsonSerializerOptions
