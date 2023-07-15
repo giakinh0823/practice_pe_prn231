@@ -34,7 +34,6 @@ D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Mic
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Microsoft.Spatial.dll
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\Client\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

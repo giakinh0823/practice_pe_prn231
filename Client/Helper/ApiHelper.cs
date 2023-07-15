@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Net.Http;
+using System.Text.Json;
 
 namespace Client.Helper
 {
@@ -13,52 +14,77 @@ namespace Client.Helper
 
         public async Task<TResponse?> GetAsync<TResponse>(string url)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<TResponse>(content);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
         public async Task<TResponse?> PostAsync<TResponse>(string url, IDictionary<string, string> data)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var content = new FormUrlEncodedContent(data);
             var response = await _httpClient.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
-            var responseContent = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<TResponse>(responseContent);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
         public async Task<TResponse?> PutAsync<TResponse>(string url, IDictionary<string, string> data)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var content = new FormUrlEncodedContent(data);
             var response = await _httpClient.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 
-            var responseContent = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<TResponse>(responseContent);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
         public async Task<TResponse?> DeleteAsync<TResponse>(string url)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var response = await _httpClient.DeleteAsync(url);
             response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<TResponse>(content);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
         public async Task<TResponse?> SearchAsync<TResponse>(string url, IDictionary<string, string> parameters)
         {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var queryString = new FormUrlEncodedContent(parameters).ReadAsStringAsync().Result;
             var fullUrl = $"{url}?{queryString}";
 
             var response = await _httpClient.GetAsync(fullUrl);
             response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<TResponse>(content);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
     }
 }

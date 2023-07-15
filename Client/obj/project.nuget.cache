@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hKzVOd2OCin0RpbNJveaX1K1cdSXk0EXie6ZcUxTQnYYE+17Zkui2PNkfuV5DT1AVEcFyE+Oml5SibFLbY9RSA==",
+  "dgSpecHash": "iRGTh5PulmOy/Z8K7+ehdvF0mTb5DD95wTvCnYy5ufsqh7JllTpAsZ2W12Uw2/GCHS1m3agTROOyO8HLcXTJUA==",
   "success": true,
   "projectFilePath": "D:\\FPT UNIVERSITY\\STUDY\\KY 8\\PRN231\\PE_BEST_PRACTICE\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,6 @@
     "C:\\Users\\giaki\\.nuget\\packages\\microsoft.spatial\\7.16.0\\microsoft.spatial.7.16.0.nupkg.sha512",
     "C:\\Users\\giaki\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\giaki\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\giaki\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

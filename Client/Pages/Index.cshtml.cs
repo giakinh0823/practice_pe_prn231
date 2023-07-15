@@ -2,7 +2,6 @@
 using Client.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json;
 using PE_BEST_PRACTICE.Models;
 using System.Collections.Generic;
 using System.Data;
