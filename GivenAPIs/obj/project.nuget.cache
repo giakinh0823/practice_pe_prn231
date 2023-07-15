@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bJp8kctCadKHXCZgcQREGICseGMROAFCwAkGUHoah9k51ZlyXHJSOuy3JVna1hB3ki3IhE1DDQq43DWAMy9pIw==",
+  "success": true,
+  "projectFilePath": "D:\\FPT UNIVERSITY\\STUDY\\KY 8\\PRN231\\PE_BEST_PRACTICE\\GivenAPIs\\GivenAPIs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\giaki\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\giaki\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\giaki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

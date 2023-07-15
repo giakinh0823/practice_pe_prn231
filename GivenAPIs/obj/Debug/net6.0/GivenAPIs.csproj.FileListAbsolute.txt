@@ -1,0 +1,64 @@
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\appsettings.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\GivenAPIs.exe
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\GivenAPIs.deps.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\GivenAPIs.runtimeconfig.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\GivenAPIs.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\GivenAPIs.pdb
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.AssemblyReference.cache
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.AssemblyInfoInputs.cache
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.AssemblyInfo.cs
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.CoreCompileInputs.cache
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.GivenAPIs.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.build.GivenAPIs.props
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GivenAPIs.props
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GivenAPIs.props
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\scopedcss\bundle\GivenAPIs.styles.css
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.CopyComplete
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\refint\GivenAPIs.dll
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.pdb
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\GivenAPIs.genruntimeconfig.cache
+C:\Users\giaki\OneDrive\Máy tính\PE\PE_PRN231_23_GivenSolution\PE_PRN231_23_GivenSolution\GivenAPIs\obj\Debug\net6.0\ref\GivenAPIs.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\appsettings.Development.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\appsettings.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\GivenAPIs.exe
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\GivenAPIs.deps.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\GivenAPIs.runtimeconfig.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\GivenAPIs.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\GivenAPIs.pdb
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.AssemblyReference.cache
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.AssemblyInfoInputs.cache
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.AssemblyInfo.cs
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.CoreCompileInputs.cache
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.MvcApplicationPartsAssemblyInfo.cs
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.MvcApplicationPartsAssemblyInfo.cache
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.GivenAPIs.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.build.GivenAPIs.props
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GivenAPIs.props
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GivenAPIs.props
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets.pack.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets.build.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\staticwebassets.development.json
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\scopedcss\bundle\GivenAPIs.styles.css
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.csproj.CopyComplete
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\refint\GivenAPIs.dll
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.pdb
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\GivenAPIs.genruntimeconfig.cache
+D:\FPT UNIVERSITY\STUDY\KY 8\PRN231\PE_BEST_PRACTICE\GivenAPIs\obj\Debug\net6.0\ref\GivenAPIs.dll
