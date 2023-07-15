@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE_BEST_PRACTICE", "PE_BEST_PRACTICE\PE_BEST_PRACTICE.csproj", "{A9FFE2F2-F457-49FD-9F03-54646B3F6662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{6D0DDE98-5864-47C9-8AA2-EE8AF1040AFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{6D0DDE98-5864-47C9-8AA2-EE8AF1040AFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

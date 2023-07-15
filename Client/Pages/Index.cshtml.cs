@@ -3,6 +3,7 @@ using Client.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using PE_BEST_PRACTICE.Models;
 using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
@@ -12,22 +13,13 @@ namespace Client.Pages
     public class IndexModel : PageModel
     {
         private readonly string baseUrl = "http://localhost:5000";
-
-        private readonly ILogger<IndexModel> _logger;
-
         private static readonly HttpClient _httpClient = new HttpClient();
         private static readonly ApiOdataHelper _apiODataHelper = new ApiOdataHelper(_httpClient);
         public List<Director>? Directors { get; set; }
-        public Director Director { get; set; }
+        public Director? Director { get; set; }
         
         [BindProperty(SupportsGet = true)]
         public DirectorFilter? Filter { get; set; }
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
 
         public async Task OnGet(int? id)
         {
@@ -57,8 +49,8 @@ namespace Client.Pages
                 oDataParams["$filter"] = string.Join(" and ", filters);
             }
 
-            ODataObject<List<Director>> result = await _apiODataHelper.GetWithODataAsync<ODataObject<List<Director>>>($"{baseUrl}/odata/directors", oDataParams);
-            Directors = result.Value;
+            ODataObject<List<Director>>? result = await _apiODataHelper.GetWithODataAsync<ODataObject<List<Director>>>($"{baseUrl}/odata/directors", oDataParams);
+            Directors = result?.Value;
 
             if(id != null)
             {

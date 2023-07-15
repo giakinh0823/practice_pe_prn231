@@ -1,0 +1,58 @@
+﻿@page
+@model Client.Pages.StarsModel
+@{
+}
+
+<h1>Search Star</h1>
+<form method="get" class="row m-3">
+    <input class="col-lg-3" id="nationality" value="@Model?.StarFilter?.Nationality" name="StarFilter.Nationality" type="text" placeholder="Nationality" />
+    <input class="col-lg-3" id="gender" value="@Model?.StarFilter?.Gender" name="StarFilter.Gender" type="text" placeholder="Gender" />
+    <button class="col-lg-3 btn btn-success" id="search-btn">Search</button>
+</form>
+@if (Model?.Stars != null)
+{
+<div id="table-area" class="m-1 d-flex">
+    <div class="col-lg-6">
+        <table border="1">
+            <thead>
+                <th>StarId</th>
+                <th>Fullname</th>
+                <th>Gender</th>
+                <th>Dob</th>
+                <th>Description</th>
+                <th>Nationality</th>
+                <th></th>
+            </thead>
+            <tbody>
+
+                    @foreach (var item in Model.Stars)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.FullName</td>
+                            <td>@item.Male</td>
+                            <td>@item.Dob</td>
+                            <td>@item.Description</td>
+                            <td>@item.Nationality</td>
+                            <td>
+                                <a asp-route-filter.Nationality="@Model?.StarFilter?.Nationality"
+                                   asp-route-filter.Gender="@Model?.StarFilter?.Gender"
+                                   asp-route-id="@item.Id">Detail</a>
+                            </td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-6" id="detail-area">
+            @if (Model.Star != null)
+            {
+                <h1>List of movies of @Model.Star.FullName</h1>
+                @foreach (var item in Model.Star.Movies)
+                {
+                    <p>@item.Title  - Release year: @item.ReleaseDate</p>
+                }
+            }
+        </div>
+</div>
+}
