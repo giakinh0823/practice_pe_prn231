@@ -22,6 +22,7 @@
                 <th>Description</th>
                 <th>Nationality</th>
                 <th></th>
+                <th></th>
             </thead>
             <tbody>
 
@@ -39,6 +40,11 @@
                                    asp-route-StarFilter.Gender="@Model?.StarFilter?.Gender"
                                    asp-route-id="@item.Id">Detail</a>
                             </td>
+                            <td>
+                                <form method="post" asp-page-handler="Delete" asp-route-id="@item.Id" onsubmit="return confirmDelete()">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </td>
                         </tr>
                     }
             </tbody>
@@ -55,4 +61,58 @@
             }
         </div>
 </div>
+
+    <div>
+        <h1>Create Star</h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="FullName">FullName</label>
+                <input class="form-control" id="FullName" asp-for="StarRequest.FullName" />
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div>
+                    <label class="checkbox-inline">
+                        <input type="radio" value="true" name="StarRequest.Male" checked="@Model.StarRequest.Male"/> Male
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" value="false" name="StarRequest.Male" checked="@(Model.StarRequest.Male == false)" /> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Dob">Dob</label>
+                <input class="form-control" type="date" id="Dob" asp-for="StarRequest.Dob" />
+            </div>
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <input class="form-control" id="Description" asp-for="StarRequest.Description" />
+            </div>
+
+            <div class="form-group">
+                <label for="Nationality">Nationality</label>
+                <input class="form-control" id="Nationality" asp-for="StarRequest.Nationality" />
+            </div>
+            <div>
+                @if (Model.Movies != null)
+                {
+                    @for (int i = 0; i < Model.Movies.Count; i++)
+                    {
+                        var movie = Model.Movies[i];
+                        if (movie != null)
+                        {
+                            <label>
+                                <input type="checkbox" name="StarRequest.MovieIds" value="@movie.Id.ToString()" checked="@(Model.StarRequest != null && Model.StarRequest.MovieIds != null && Model.StarRequest.MovieIds.Contains(movie.Id))" />
+                                @movie.Title
+                            </label>
+                        }
+                    }
+                }
+
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+
 }

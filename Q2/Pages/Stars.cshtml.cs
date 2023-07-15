@@ -2,6 +2,7 @@ using Client.Dto;
 using Client.Helper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Q1.Dto;
 using Q1.Models;
 using Q2.Dto;
 
@@ -14,10 +15,16 @@ namespace Q2.Pages
         private static readonly ApiOdataHelper _apiODataHelper = new ApiOdataHelper(_httpClient);
 
         public List<Star>? Stars { get; set; }
+
+        public List<Movie>? Movies { get; set; }
         public Star? Star { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public StarFilter? StarFilter { get; set; }
+
+
+        [BindProperty(SupportsGet = true)]
+        public StarRequest? StarRequest { get; set; }
 
 
         public async Task OnGet(int? id)
@@ -56,6 +63,33 @@ namespace Q2.Pages
 
                 Star = await _apiODataHelper.GetOneWithODataAsync<Star>($"{baseUrl}/odata/stars", id.ToString(), null);
             }
+
+            ODataObject<List<Movie>>? moviesOdata = await _apiODataHelper.GetWithODataAsync<ODataObject<List<Movie>>>($"{baseUrl}/odata/Movies", null);
+            Movies = moviesOdata?.Value;
         }
+
+        public async Task OnPost(int? id)
+        {
+            if (StarRequest != null)
+            {
+                if(StarRequest.MovieIds == null)
+                {
+                    StarRequest.MovieIds = new List<int>();
+                }
+                await _apiODataHelper.PostWithODataAsync<Star>($"{baseUrl}/odata/Stars", StarRequest);
+            }
+
+        }
+
+        public async Task<IActionResult> OnPostDelete(int? id)
+        {
+            if (id != null)
+            {
+                await _apiODataHelper.DeleteWithODataAsync<Star>($"{baseUrl}/odata/Stars", id.ToString());
+            }
+
+            return RedirectToPage();
+        }
+
     }
 }

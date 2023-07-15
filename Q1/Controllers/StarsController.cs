@@ -43,15 +43,17 @@ namespace Q1.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             Star star = _mapper.Map<Star>(request);
+            List<Movie> movies = _context.Movies.Where(movie => request.MovieIds.Contains(movie.Id)).ToList();
+            star.Movies = movies;
 
             try
             {
                 _context.Stars.Add(star);
                 _context.SaveChanges();
             }
-            catch
+            catch(Exception e)
             {
-                return Conflict("Không thể tạo director");
+                return Conflict("Không thể tạo star");
             }
 
             return Created(star);
@@ -86,6 +88,29 @@ namespace Q1.Controllers
             return Created(star);
         }
 
+        [EnableQuery]
+        public IActionResult Delete(int key)
+        {
+            Star? star = null;
+
+            try
+            {
+                star = _context.Stars.Include(s => s.Movies).Where(s => s.Id == key).FirstOrDefault();
+                if (star == null) return NotFound();
+
+                star.Movies.Clear(); // Clear the Movies collection
+
+                _context.Stars.Remove(star);
+
+                _context.SaveChanges();
+            }
+            catch
+            {
+                return Conflict("Không thể delete star");
+            }
+
+            return Ok(1);
+        }
 
         /*
         [EnableQuery]
