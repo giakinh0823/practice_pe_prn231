@@ -35,8 +35,8 @@
                             <td>@item.Description</td>
                             <td>@item.Nationality</td>
                             <td>
-                                <a asp-route-filter.Nationality="@Model?.StarFilter?.Nationality"
-                                   asp-route-filter.Gender="@Model?.StarFilter?.Gender"
+                                <a asp-route-StarFilter.Nationality="@Model?.StarFilter?.Nationality"
+                                   asp-route-StarFilter.Gender="@Model?.StarFilter?.Gender"
                                    asp-route-id="@item.Id">Detail</a>
                             </td>
                         </tr>

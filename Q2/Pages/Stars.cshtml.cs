@@ -53,17 +53,8 @@ namespace Q2.Pages
 
             if (id != null)
             {
-                var oDataParamsDetail = new Dictionary<string, string>
-                {
-                    { "$expand", "movies" },
-                };
 
-                var resultDetail = await _apiODataHelper.GetOneWithODataAsync<ODataObject<List<Star>>>($"{baseUrl}/odata/stars", id.ToString(), oDataParamsDetail);
-                var stars = resultDetail?.Value;
-                if (stars != null && stars.Count > 0)
-                {
-                    Star = stars[0];
-                }   
+                Star = await _apiODataHelper.GetOneWithODataAsync<Star>($"{baseUrl}/odata/stars", id.ToString(), null);
             }
         }
     }

@@ -38,7 +38,11 @@ namespace Client.Helper
             };
 
             var queryString = BuildODataQueryString(parameters);
-            var fullUrl = $"{url}/{id}?{queryString}";
+            var fullUrl = $"{url}/{id}";
+            if (queryString != null)
+            {
+                fullUrl += $"?{queryString}";
+            }
 
             var response = await _httpClient.GetAsync(fullUrl);
             response.EnsureSuccessStatusCode();
@@ -146,6 +150,7 @@ namespace Client.Helper
 
         private string BuildODataQueryString(IDictionary<string, string> parameters)
         {
+            if (parameters == null) return null;
             var queryStringParams = new List<string>();
             foreach (var parameter in parameters)
             {

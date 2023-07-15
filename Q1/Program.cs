@@ -37,7 +37,7 @@ builder.Services.AddControllers().AddOData(option => option.Select().Filter().Co
 // add mapper
 var mapperConfig = new MapperConfiguration(mc =>
 {
-    mc.AddProfile(new MappingProfile());  // Nhớ tạo mapper profile trước 
+    mc.AddProfile(new MappingProfile());
 });
 
 IMapper mapper = mapperConfig.CreateMapper();
