@@ -17,8 +17,7 @@ namespace Client.Pages
         private static readonly ApiOdataHelper _apiODataHelper = new ApiOdataHelper(_httpClient);
 
         public List<Director>? Directors { get; set; }
-        public Director? Director { get; set; }
-        
+        public Director? Director { get; set; }        
         
         [BindProperty(SupportsGet = true)]
         public DirectorFilter? Filter { get; set; }
