@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Text;
 using System.Text.Json;
 
 namespace Client.Helper
@@ -26,14 +27,16 @@ namespace Client.Helper
             return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
-        public async Task<TResponse?> PostAsync<TResponse>(string url, IDictionary<string, string> data)
+        public async Task<TResponse?> PostAsync<TResponse>(string url, Object data)
         {
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             };
 
-            var content = new FormUrlEncodedContent(data);
+            string json = JsonSerializer.Serialize(data);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
             var response = await _httpClient.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
 
@@ -41,14 +44,16 @@ namespace Client.Helper
             return await JsonSerializer.DeserializeAsync<TResponse>(stream, options);
         }
 
-        public async Task<TResponse?> PutAsync<TResponse>(string url, IDictionary<string, string> data)
+        public async Task<TResponse?> PutAsync<TResponse>(string url, Object data)
         {
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             };
 
-            var content = new FormUrlEncodedContent(data);
+            string json = JsonSerializer.Serialize(data);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
             var response = await _httpClient.PutAsync(url, content);
             response.EnsureSuccessStatusCode();
 

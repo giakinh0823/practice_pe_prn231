@@ -33,7 +33,10 @@ namespace PE_BEST_PRACTICE.Controllers
         [EnableQuery]
         public IActionResult Post([FromBody] DirectorRequest request)
         {
+            var data = request;
+
             if (!ModelState.IsValid) return BadRequest(ModelState);
+
             Director director = _mapper.Map<Director>(request);
 
             try

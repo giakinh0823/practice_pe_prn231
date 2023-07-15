@@ -64,3 +64,38 @@
         </div>
     </div>
 }
+
+
+<div>
+    <h1>Create Director</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input class="form-control" id="fullName" asp-for="DirectorRequest.FullName" />
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div>
+                <label class="checkbox-inline">
+                    <input type="radio" value="true" name="gender" asp-for="DirectorRequest.Male" /> Male
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" value="false" name="gender" asp-for="DirectorRequest.Male" /> Female
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input class="form-control" id="dob" type="date" asp-for="DirectorRequest.Dob" />
+        </div>
+        <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <input class="form-control" id="nationality" asp-for="DirectorRequest.Nationality" />
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" asp-for="DirectorRequest.Description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
