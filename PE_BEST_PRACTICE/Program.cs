@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
-using PE_BEST_PRACTICE.Dto;
 using PE_BEST_PRACTICE.Models;
-using System.Diagnostics;
+using PE_BEST_PRACTICE.MapperConfig;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
