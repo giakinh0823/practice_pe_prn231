@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PE_BEST_PRACTICE.props" />
+</Project>

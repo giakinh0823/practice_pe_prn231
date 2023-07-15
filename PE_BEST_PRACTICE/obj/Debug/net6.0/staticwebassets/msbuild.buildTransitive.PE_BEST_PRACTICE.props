@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PE_BEST_PRACTICE.props" />
+</Project>

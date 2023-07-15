@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stars</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+        <h1>Search Star</h1>
+        <div class="row m-3">
+            <input class="col-lg-3" id="nationality" type="text" placeholder="Nationality" />
+            <input class="col-lg-3" id="gender" type="text" placeholder="Gender" />
+            <button class="col-lg-3 btn btn-success" id="search-btn">Search</button>
+        </div>
+        <div id="table-area" style="display: none" class="m-1">
+            <div class="col-lg-6">
+                <table border="1">
+                    <thead>
+                        <th>StarId</th>
+                        <th>Fullname</th>
+                        <th>Gender</th>
+                        <th>Dob</th>
+                        <th>Description</th>
+                        <th>Nationality</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6" id="detail-area">
+
+            </div>
+        </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#search-btn").on("click", function () {
+            var nationality = $("#nationality").val()
+            var gender = $("#gender").val()
+
+            $("table tbody").html("");
+
+            $.ajax({
+                url: "http://localhost:5000/api/Star/GetStars/" + nationality + "/" + gender,
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                success: function (result, status, xhr) {
+                    $.each(result, function (index, value) {
+                        $("tbody").append($("<tr>"));
+                        appendElement = $("tbody tr").last();
+                        appendElement.append($("<td>").html(value["id"]));
+                        appendElement.append($("<td>").html(value["fullName"]));
+                        appendElement.append($("<td>").html(value["male"] == true ? "Male" : "Female"));
+                        appendElement.append($("<td>").html(value["dobString"]));
+                        appendElement.append($("<td>").html(value["description"]));
+                        appendElement.append($("<td>").html(value["nationality"]));
+                        appendElement.append($("<td>").html("<a class=\"detail-link\" href=#>Detail</a>"));
+                    })
+
+                    $("#table-area").css("display", "inline-flex");
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("table").on("click", ".detail-link", function () {
+            var starId = $(this).parents("tr").find("td:nth-child(1)").text();
+
+            $("#detail-area").html("");
+
+            $.ajax({
+                url: "http://localhost:5000/api/Star/GetStar/" + starId,
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                success: function (result, status, xhr) {
+                    $("#detail-area").append($("<h1>").html("List of movies of '" + result["fullName"] + "'"));
+                    $.each(result["movies"], function (index, value) {
+                        $("#detail-area").append($("<p>").html(value["title"] + " - Release year: " + value["releaseYear"]));
+                    })
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                }
+            });
+        });
+
+    });
+</script>
